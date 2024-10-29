@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url(https://img.freepik.com/free-photo/abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-pr_1258-66739.jpg?t=st=1730188456~exp=1730192056~hmac=1b5f74ea7836af8b25acf67542d34ab95ca3ad168ee1241d32e1768e93d50821&w=826);
 }
 
 .container {
@@ -14,7 +15,49 @@ body {
 }
 
 .calculator {
-  padding: 20px;
+  padding: 1rem;
   background-color: #fff;
   border-radius: 10px;
+}
+
+form input {
+  border: none;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background: linear-gradient(135deg, #3a3a3a, #000000);
+  font-size: 1rem;
+  font-weight: bolder;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+}
+
+form input[type="button"]:hover {
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 0px 15px 0px;
+}
+
+form .display input {
+  background: black;
+  text-align: end;
+  flex: 1;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+}
+
+form input.equal {
+  width: 130px;
+  background: linear-gradient(60deg, #ff0300, #ffa100);
+}
+
+form input[type="button"]:active {
+  transform: translateY(2px);
+  transition: transform 0.10s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
